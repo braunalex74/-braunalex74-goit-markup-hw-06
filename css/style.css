@@ -779,6 +779,6 @@ img {
 .footer-input-icon {
     position: absolute;
     top: 13px;
-    left: 148px;
+    right: 28px;
     fill: currentColor;
 }
