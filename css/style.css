@@ -815,7 +815,7 @@ img {
 
     font-weight: 400;
     font-size: 12px;
-    line-height: 14px;
+    line-height: 1.17;
     letter-spacing: 0.01em;
 
     color: rgba(25, 7, 7, 0.5);
@@ -860,7 +860,7 @@ img {
 .label-text {
     font-weight: 400;
     font-size: 12px;
-    line-height: 14px;
+    line-height: 1.17;
     letter-spacing: 0.01em;
     color: var(--primary-text-color);
 }
@@ -879,7 +879,7 @@ img {
 
     font-weight: 700;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.88;
     letter-spacing: 0.06em;
 
     color: var(--primary-white-color);
@@ -924,9 +924,12 @@ label.modal-politic-label {
     fill: var(--primary-white-color);
 }
 .politic-cklick {
+    margin-left: 5px;
     color: var(--primary-text-color);
+    text-decoration: none;
 }
 .politic-cklick:hover,
 .politic-cklick:focus {
     color: var(--accent-color);
+    text-decoration: underline;
 }
