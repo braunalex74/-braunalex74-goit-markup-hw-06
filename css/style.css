@@ -123,7 +123,7 @@ img {
     position: relative;
 
     color: var(--title-text-color);
-    transition: color 250ms linear;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-nav-list .header-link:hover,
 .header-nav-list .header-link:focus {
@@ -666,11 +666,8 @@ img {
     align-items: baseline;
 }
 .footer-form {
-    margin-left: 93px;
-    display: block;
-    justify-content: center;
-    align-items: center;
-    
+    margin-left: auto;
+    display: block;    
 }
 .footer-form-text {
     margin-top: 0;
@@ -726,7 +723,6 @@ img {
     filter: drop-shadow(var(--box-shadow-color-2));
     border-radius: 4px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    cursor: pointer;
 }
 .footer-input:hover,
 .footer-input:focus {
@@ -798,6 +794,8 @@ img {
     fill: var(--accent-color);
 }
 .modal-form-title {
+    margin: 0;
+    margin-bottom: 12px ;
     text-align: center;
 
     font-weight: 700;
@@ -933,12 +931,27 @@ label.modal-politic-label {
     fill: var(--primary-white-color);
 }
 .politic-cklick {
+    position: relative;
+
     margin-left: 5px;
     color: var(--primary-text-color);
     text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .politic-cklick:hover,
 .politic-cklick:focus {
     color: var(--accent-color);
-    text-decoration: underline;
+
 }
+.line::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    border-radius: 1px;
+}
+.line:hover::after {
+    background-color: var(--accent-color);
+} 
